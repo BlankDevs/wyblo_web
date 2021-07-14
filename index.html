@@ -4,14 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://wyblo.com//wp-content/uploads/2021/02/wyblo-favicon.png">
+    <link rel="apple-touch-icon" href="https://wyblo.com//wp-content/uploads/2021/02/wyblo-favicon-touch.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="css\styles.css" rel="stylesheet" >
     <title>Wyblo</title>
 </head>
 <body>
+    
+    <div class="container-fluid align-content-center">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://wyblo.com">
+                <img src="https://wyblo.com/wp-content/uploads/2021/02/wyblo_Pittogramma_color.svg" alt="Wyblo" width="30" height="30" class="d-inline-block align-text-top">
+              </a>
+              <a class="navbar-brand" href="profile.html">
+                John Doe <img src="https://www.svgrepo.com/show/60582/avatar.svg" alt="Name of learner" width="30" height="30" class="d-inline-block align-text-top">
+              </a>
+            </div>
+        </nav>
 
-    <p>We Out here</p>
+        <!-- CONTENT BODY -->
+        <div class="row align-content-center">
+
+          <!-- SIDE -->
+          <div class="col side">
+            <div class="row text-center profile-pic-db">
+              <img src="https://www.svgrepo.com/show/105032/avatar.svg" alt="avatar">
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto btn-top">
+              <button class="btn btn-light btn-md" type="button">Overview</button>
+              <button class="btn btn-light btn-md" type="button">Dashboards</button>
+              <button class="btn btn-light btn-md" type="button">Courses</button>
+              <button class="btn btn-light btn-md" type="button">CRM</button>
+              <button class="btn btn-light btn-md" type="button">Survey</button>
+              <button class="btn btn-light btn-md" type="button">Certificates</button>
+              <button class="btn btn-light btn-md" type="button">Content Management</button>
+            </div>
+
+            <div class="d-grid gap-4">
+              <br>
+              <br>
+            </div>
+            
+            <div class="d-grid gap-2 col-6 mx-auto btn-bottom">
+              <button class="btn btn-light btn-md" type="button">Settings</button>
+              <button class="btn btn-light btn-md" type="button">Logout</button>
+              <br>
+            </div>
+
+
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="col divide-cols"></div>
+
+          <!-- MAIN -->
+          <div class="col main">
+              <!-- OVERVIEW HEADER -->
+              <div class="row">
+                <h1 class="overview text-center">Overview</h1>
+              </div>
+              <br>
+
+              <!-- COURSE BUTTON -->
+              <div class="col btn-col d-flex flex-column-reverse">
+                <button class="btn btn-md btn-light course-button" type="button">
+                  <i class="fas fa-plus-circle"></i> Add course
+                </button>
+              </div>
+              <!-- <br> -->
+
+              <!-- CARDS -->
+              <div class="row primary-cards">
+                <div class="row info-cards text-center">
+                       
+                  <div class="col">
+                    <div class="card card-content">
+                      <div class="card-body">
+                        <h4 class="card-title">12</h4>
+                        <p class="card-text">Coming Winters</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                      <div class="card card-content">
+                        <div class="card-body">
+                          <h4 class="card-title">+18K</h4>
+                          <p class="card-text">Articles</p>
+                        </div>
+                      </div>
+                    </div> 
+
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">R12</h4>
+                          <p class="card-text">Per Month</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">7</h4>
+                          <p class="card-text">Springs</p>
+                        </div>
+                      </div>
+                    </div> 
+
+                    <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">4</h4>
+                            <p class="card-text">Seasons</p>
+                          </div>
+                        </div>
+                      </div> 
+
+                </div>
+              </div>
+              <!-- <br> -->
+
+              <!-- CHARTS -->
+              <div class="row charts">
+
+                <div class="col">
+                  <canvas id="line-chart" width="280" height="180"></canvas> 
+                </div>
+                <div class="col">
+                  <canvas id="bar-chart-grouped" width="280" height="180"></canvas>
+                </div>
+                <div class="col">
+                  <canvas id="bar-chart-horizontal" width="280" height="180"></canvas>
+                </div>
+
+                <div id="chart_div"></div>
+              </div>
+
+              <!-- MAPS & TEXT -->
+              <div class="row map">
+                
+
+              </div>
+          </div>            
+        </div>
+        
+    </div>
+    
+    <!-- POPPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Google Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Core JS -->
+    <script src="js/scripts.js"></script>
+    <!-- Fontawesome JS -->
+    <script src="fontawesome/js/all.js"></script>
+
 </body>
 </html>
