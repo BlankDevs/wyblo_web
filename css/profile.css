@@ -1,0 +1,51 @@
+body, form {
+    margin: 0 auto;
+    color: #c4c4c4;
+}
+
+.container-fluid {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: inherit;
+    max-height: 100%;
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0 #f1f1f1;
+}
+
+.form-div {
+    margin: 0 auto;
+}
+
+.profile-pic-db {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+.btn-submit {
+    margin-top: 40px;
+    padding: 15px;
+    color: rgb(0, 189, 126);
+}
+
+.btn-submit:hover {
+    color: #111;
+}
+
+i {
+ color: rgb(194, 194, 194);
+}
+
+.close:hover {
+    color: rgb(0, 255, 170);
+    transform: translateY(-4px);
+    transition: all 0.8s ease-in-out, color 0.2s;
+}
+
+label {
+    color: #646464;
+    font-weight: 300;
+}
