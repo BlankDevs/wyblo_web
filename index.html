@@ -13,150 +13,234 @@
     <title>Wyblo</title>
 </head>
 <body>
-    
-    <div class="container-fluid align-content-center">
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="https://wyblo.com">
-                <img src="https://wyblo.com/wp-content/uploads/2021/02/wyblo_Pittogramma_color.svg" alt="Wyblo" width="30" height="30" class="d-inline-block align-text-top">
-              </a>
-              <a class="navbar-brand" href="profile.html">
-                John Doe <img src="https://www.svgrepo.com/show/60582/avatar.svg" alt="Name of learner" width="30" height="30" class="d-inline-block align-text-top">
-              </a>
-            </div>
-        </nav>
 
-        <!-- CONTENT BODY -->
-        <div class="row align-content-center">
+  <div class="container-fluid">
 
-          <!-- SIDE -->
-          <div class="col side">
-            <div class="row text-center profile-pic-db">
-              <img src="https://www.svgrepo.com/show/105032/avatar.svg" alt="avatar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="https://wyblo.com">
+                    <img src="https://wyblo.com/wp-content/uploads/2021/02/wyblo_Pittogramma_color.svg" alt="Wyblo" width="30" height="30" class="d-inline-block align-text-top company-nav">
+                </a>                    
             </div>
 
-            <div class="d-grid gap-2 col-6 mx-auto btn-top">
-              <button class="btn btn-light btn-md" type="button">Overview</button>
-              <button class="btn btn-light btn-md" type="button">Dashboards</button>
-              <button class="btn btn-light btn-md" type="button">Courses</button>
-              <button class="btn btn-light btn-md" type="button">CRM</button>
-              <button class="btn btn-light btn-md" type="button">Survey</button>
-              <button class="btn btn-light btn-md" type="button">Certificates</button>
-              <button class="btn btn-light btn-md" type="button">Content Management</button>
-            </div>
-
-            <div class="d-grid gap-4">
-              <br>
-              <br>
-            </div>
-            
-            <div class="d-grid gap-2 col-6 mx-auto btn-bottom">
-              <button class="btn btn-light btn-md" type="button">Settings</button>
-              <button class="btn btn-light btn-md" type="button">Logout</button>
-              <br>
-            </div>
-
-
+          <div>
+                <a class="nav-brand" href="#">
+                    <img src="https://www.svgrepo.com/show/60582/avatar.svg" alt="Learner Avatar" width="30" height="30" class="d-inline-block align-text-top user-nav">
+                </a>                  
           </div>
 
-          <!-- DIVIDER -->
-          <div class="col divide-cols"></div>
+        </div>
+    </nav>
 
-          <!-- MAIN -->
-          <div class="col main">
-              <!-- OVERVIEW HEADER -->
-              <div class="row">
-                <h1 class="overview text-center">Overview</h1>
-              </div>
-              <br>
+<div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-0 side">
+        <div class="d-flex flex-column align-items-center align-items-sm-center px-3 pt-2 text-white">
 
-              <!-- COURSE BUTTON -->
-              <div class="col btn-col d-flex flex-column-reverse">
-                <button class="btn btn-md btn-light course-button" type="button">
-                  <i class="fas fa-plus-circle"></i> Add course
-                </button>
-              </div>
-              <!-- <br> -->
+            <div class="col nav nav-pills flex-column mb-sm-auto mb-0 align-items-center text-center" id="menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link align-middle px-0">
+                            <!-- Company Logo -->
+                            <img src="https://www.svgrepo.com/show/22596/group.svg" class="rounded-circle d-none d-md-inline" alt="Company Logo" width="100" height="85"> 
+                    </a>
+                </li>
 
-              <!-- CARDS -->
-              <div class="row primary-cards">
-                <div class="row info-cards text-center">
-                       
-                  <div class="col">
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li class="nav-item">
+                    <div class="row align-content-center">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fad fa-2x fa-chalkboard-teacher"></i>
+                            <p><span class="ms-1 d-none d-md-inline">Overview</span></p>
+                        </a>                            
+                    </div>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li class="nav-item">
+                    <div class="row align-content-center">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fad fa-2x fa-chart-pie"></i>
+                            <p><span class="ms-1 d-none d-md-inline">Dashboards</span></p>
+                        </a>                            
+                    </div>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li class="nav-item">
+                    <div class="row align-content-center">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fad fa-2x fa-book"></i>
+                            <p><span class="ms-1 d-none d-md-inline">Courses</span></p>
+                        </a>                            
+                    </div>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li class="nav-item">
+                    <div class="row align-content-center">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fad fa-2x fa-poll-people"></i>
+                            <p><span class="ms-1 d-none d-md-inline">CRM</span></p>
+                        </a>                            
+                    </div>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>  
+                
+                <li class="nav-item">
+                    <div class="col align-content-center text-center">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fad fa-2x fa-poll"></i>
+                            <p><span class="ms-1 d-none d-md-inline">Survey</span></p>
+                        </a>                            
+                    </div>
+                </li>
+
+                
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li class="nav-item">
+                    <div class="row align-content-center">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fad fa-2x fa-certificate"></i>
+                            <p><span class="ms-1 d-none d-md-inline">Certificates</span></p>
+                        </a>                            
+                    </div>
+                </li>                    
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li class="nav-item">
+                    <div class="col align-content-center">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fad fa-2x fa-tasks"></i>
+                            <p><span class="ms-1 d-none d-md-inline">Content Management</span></p>
+                        </a>                            
+                    </div>
+                </li>
+            </div>
+            <hr>
+
+        </div>
+        <div class="row text-center">
+            <p id="ver">V 1.6</p>
+            <p id="blankdevs">Developed by Blank Devs</p>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="col py-3 main-content">
+
+            <!-- OVERVIEW HEADER -->
+            <div class="row">
+              <h1 class="overview text-center">Overview</h1>
+            </div>
+            <br>
+
+            <!-- COURSE BUTTON -->
+            <div class="col btn-col d-flex flex-column-reverse">
+              <button class="btn btn-md btn-light course-button" type="button">
+                <i class="fas fa-plus-circle"></i> Add course
+              </button>
+            </div>
+            <!-- <br> -->
+
+            <!-- CARDS -->
+            <div class="row primary-cards">
+              <div class="row info-cards text-center">
+                     
+                <div class="col">
+                  <div class="card card-content">
+                    <div class="card-body">
+                      <h4 class="card-title">12</h4>
+                      <p class="card-text">Coming Winters</p>
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="col">
                     <div class="card card-content">
                       <div class="card-body">
-                        <h4 class="card-title">12</h4>
-                        <p class="card-text">Coming Winters</p>
+                        <h4 class="card-title">+18K</h4>
+                        <p class="card-text">Articles</p>
+                      </div>
+                    </div>
+                  </div> 
+
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">R12</h4>
+                        <p class="card-text">Per Month</p>
                       </div>
                     </div>
                   </div>
 
                   <div class="col">
-                      <div class="card card-content">
-                        <div class="card-body">
-                          <h4 class="card-title">+18K</h4>
-                          <p class="card-text">Articles</p>
-                        </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">7</h4>
+                        <p class="card-text">Springs</p>
                       </div>
-                    </div> 
+                    </div>
+                  </div> 
 
-                    <div class="col">
+                  <div class="col">
                       <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title">R12</h4>
-                          <p class="card-text">Per Month</p>
+                          <h4 class="card-title">4</h4>
+                          <p class="card-text">Seasons</p>
                         </div>
                       </div>
                     </div>
 
-                    <div class="col">
-                      <div class="card">
-                        <div class="card-body">
-                          <h4 class="card-title">7</h4>
-                          <p class="card-text">Springs</p>
-                        </div>
-                      </div>
-                    </div> 
-
-                    <div class="col">
-                        <div class="card">
-                          <div class="card-body">
-                            <h4 class="card-title">4</h4>
-                            <p class="card-text">Seasons</p>
-                          </div>
-                        </div>
-                      </div> 
-
-                </div>
               </div>
-              <!-- <br> -->
+            </div>
+            <!-- <br> -->
 
-              <!-- CHARTS -->
-              <div class="row charts">
+            <!-- CHARTS -->
+            <div class="row charts">
 
-                <div class="col">
-                  <canvas id="line-chart" width="280" height="180"></canvas> 
-                </div>
-                <div class="col">
-                  <canvas id="bar-chart-grouped" width="280" height="180"></canvas>
-                </div>
-                <div class="col">
-                  <canvas id="bar-chart-horizontal" width="280" height="180"></canvas>
-                </div>
-
-                <div id="chart_div"></div>
+              <div class="col-4">
+                <canvas id="bar-chart-grouped" width="180" height="180"></canvas> 
               </div>
-
-              <!-- MAPS & TEXT -->
-              <div class="row map">
-                
-
+              <div class="col-4">
+                <canvas id="line-chart" width="180" height="180"></canvas>
               </div>
-          </div>            
-        </div>
-        
+            </div> 
+            <div class="row charts">
+            <div class="col-4">
+              <canvas id="myChart" width="180" height="180"></canvas>
+            </div>
+            <div class="col-4">
+              <canvas id="bar-chart-horizontal" width="180" height="180"></canvas>
+            </div>
+            </div> 
+
+
     </div>
+</div>
+</div>
+
     
     <!-- POPPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -178,5 +262,44 @@
         });
       });
     </script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
 </body>
 </html>
