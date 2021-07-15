@@ -168,8 +168,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <!-- Core JS -->
     <script src="js/scripts.js"></script>
-    <!-- Fontawesome JS -->
-    <script src="fontawesome/js/all.js"></script>
-
+    <script>
+        $(document).ready(function() {
+    
+        $('.card').delay(1800).queue(function(next) {
+          $(this).removeClass('hover');
+          $('a.hover').removeClass('hover');
+          next();
+        });
+      });
+    </script>
 </body>
 </html>

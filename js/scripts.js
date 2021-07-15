@@ -1,15 +1,5 @@
 // Card Hover Animation
-$(document).ready(function() {
-	
-	$('.card').delay(1800).queue(function(next) {
-		$(this).removeClass('hover');
-		$('a.hover').removeClass('hover');
-		next();
-	});
-});
 
-// Image
-$('#OpenImgUpload').click(function(){ $('#imgupload').trigger('click'); });
 
 // Next screen
 function nextScreen(){
