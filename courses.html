@@ -35,10 +35,10 @@
         </nav>
 
     <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-0 side">
-            <div class="d-flex flex-column align-items-center align-items-sm-center px-3 pt-2 text-white">
+        <div class="col-auto side">
+            <div class="d-flex flex-column align-items-center text-white">
 
-                <div class="col nav nav-pills flex-column mb-sm-auto mb-0 align-items-center text-center" id="menu">
+                <div class="col nav nav-pills flex-column mb-0 align-items-center text-center" id="menu">
                     <li class="nav-item">
                         <a href="#" class="nav-link align-middle px-0">
                                 <!-- Company Logo -->
@@ -52,16 +52,16 @@
 
                     <li class="nav-item">
                         <div class="row align-content-center">
-                            <a href="#" class="nav-link align-middle px-0">
+                            <a href="index.html" class="nav-link align-middle px-0">
                                 <i class="fad fa-2x fa-chalkboard-teacher"></i>
                                 <p><span class="ms-1 d-none d-md-inline">Overview</span></p>
                             </a>                            
                         </div>
                     </li>
 
-                    <li>
+                    <!-- <li>
                         <hr class="dropdown-divider">
-                    </li>
+                    </li> -->
     
                     <li class="nav-item">
                         <div class="row align-content-center">
@@ -72,9 +72,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <!-- <li>
                         <hr class="dropdown-divider">
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <div class="row align-content-center">
@@ -85,9 +85,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <!-- <li>
                         <hr class="dropdown-divider">
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <div class="row align-content-center">
@@ -98,9 +98,9 @@
                         </div>
                     </li>
 
-                    <li>
+                    <!-- <li>
                         <hr class="dropdown-divider">
-                    </li>  
+                    </li>   -->
                     
                     <li class="nav-item">
                         <div class="col align-content-center text-center">
@@ -112,9 +112,9 @@
                     </li>
 
                     
-                    <li>
+                    <!-- <li>
                         <hr class="dropdown-divider">
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <div class="row align-content-center">
@@ -125,9 +125,9 @@
                         </div>
                     </li>                    
 
-                    <li>
+                    <!-- <li>
                         <hr class="dropdown-divider">
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <div class="col align-content-center">
@@ -148,38 +148,51 @@
         <div class="col py-3 main-content">
 
             <!-- OVERVIEW HEADER -->
-            <div class="row">
-                <h1 class="overview text-center">Overview</h1>
+            <div class="d-grid gap-2 d-flex justify-content-between">
+                <div class="d-grid gap-2 d-flex justify-content-between">
+                    <h1 class="overview d-flex">Courses</h1>
+                </div>
+
+                <form class="d-flex d-inline-block">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
             </div>
+              <br>
               <br>
   
               <!-- COURSE BUTTON -->
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-md" type="button">
+              <div class="d-grid gap-2 d-flex justify-content-end">
+                  <div class="d-grid gap-2 d-flex justify-content-end">
+                <button class="btn" type="button">
                   <i class="fas fa-download"></i> Export
                 </button>
                 
-                <button class="btn btn-md" type="button course-icon">
+                <button class="btn btn-outline-success" type="button">
                     <i class="fas fa-calendar"></i> View Calendar 
                 </button>
 
-                <button class="btn btn-md course-button course-icon" type="button">
+                <button class="btn btn-outline-success" type="button">
                     <i class="fas fa-chart-pie"></i> View Analytics
                 </button>
 
-                <button class="btn btn-md btn-light course-icon" type="button">
+                <button class="btn btn-outline-success" type="button">
                     <i class="fas fa-folder-plus"></i> Add Folder
                 </button>
 
-                <button class="btn btn-md course-icon" type="button">
+                <button class="btn btn-outline-success" type="button">
                     <i class="fas fa-plus-circle"></i> Add course
                 </button>
                   </div> 
             </div>
+
+            <br>
+            <br>
               
               
-            <div class="col-lg-12 col-md-10 ml-auto mr-auto">
+            <div class="col-12 ml-auto mr-auto">
                 <!-- <h4><small>Courses</small></h4> -->
                     <div class="table-responsive">
                     <table class="table text-center">
