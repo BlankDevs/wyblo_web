@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    height: 100%;
 }
 
 /* DASHBOARD */
@@ -27,6 +28,11 @@ body {
     margin-left: 10px;
 }
 
+.user-nav .company-nav{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .user-nav, .company-nav {
     transition: all .5s ease-in-out;
 }
@@ -49,10 +55,11 @@ body {
     position: inherit;
     max-height: 100%;
     max-width: 20%;
-    padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 0 #f1f1f1;
-
+        background: url(https://coderthemes.com/hyper/modern/assets/images/waves.png) no-repeat;
+        padding: 30px 20px;
+        text-align: center;
 }
 
 .side-courses {
@@ -94,15 +101,6 @@ p span {
     max-width: 0;
 }
 
-.main {
-    margin: 0 auto;
-    max-height: 100%;
-    position: inherit;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 0 #f1f1f1;
-}
-
 .main-content {
     margin: 0 auto;
     margin-left: 10px;
@@ -127,10 +125,18 @@ p span {
     color: #fff;
 }
 
+.course-button:hover {
+    margin: 0 auto;
+    background-color: #303030;
+    border-color: #3faa6c;
+    font-weight: 500;
+    color: #3faa6c;
+}
+
 
 .card {
     display: inline-block;
-    border-color: #f8f8f8;
+    border-color: #6faa6bab;
     width: 100px;
     height: 100px;
     margin: 1rem;
@@ -180,8 +186,12 @@ textarea:focus {
     color: #3faa6b;
 }
 
-.fa-plus-circle {
+.fa-plus-circle, .course-icon {
     color: #fff;
+}
+
+.fa-plus-circle:hover, .course-icon:hover {
+    color: #3faa6b;
 }
 
 .upload-avatar {

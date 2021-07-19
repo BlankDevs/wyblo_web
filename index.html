@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="css\styles.css" rel="stylesheet" >
+    <link href="css\charts.css" rel="stylesheet" >
+    <script src="https://cdn.plot.ly/plotly-2.2.0.min.js"></script>
     <title>Wyblo</title>
 </head>
 <body>
@@ -59,9 +61,9 @@
                     </div>
                 </li>
 
-                <li>
+                <!-- <li>
                     <hr class="dropdown-divider">
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <div class="row align-content-center">
@@ -72,9 +74,9 @@
                     </div>
                 </li>
 
-                <li>
+                <!-- <li>
                     <hr class="dropdown-divider">
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <div class="row align-content-center">
@@ -85,9 +87,9 @@
                     </div>
                 </li>
 
-                <li>
+                <!-- <li>
                     <hr class="dropdown-divider">
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <div class="row align-content-center">
@@ -98,9 +100,9 @@
                     </div>
                 </li>
 
-                <li>
+                <!-- <li>
                     <hr class="dropdown-divider">
-                </li>  
+                </li>   -->
                 
                 <li class="nav-item">
                     <div class="col align-content-center text-center">
@@ -112,9 +114,9 @@
                 </li>
 
                 
-                <li>
+                <!-- <li>
                     <hr class="dropdown-divider">
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <div class="row align-content-center">
@@ -125,9 +127,9 @@
                     </div>
                 </li>                    
 
-                <li>
+                <!-- <li>
                     <hr class="dropdown-divider">
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <div class="col align-content-center">
@@ -137,6 +139,7 @@
                         </a>                            
                     </div>
                 </li>
+
             </div>
             <hr>
 
@@ -162,7 +165,6 @@
                 <i class="fas fa-plus-circle"></i> Add course
               </button>
             </div>
-            <!-- <br> -->
 
             <!-- CARDS -->
             <div class="row primary-cards">
@@ -205,35 +207,38 @@
                   </div> 
 
                   <div class="col">
-                      <div class="card">
-                        <div class="card-body">
-                          <h4 class="card-title">4</h4>
-                          <p class="card-text">Seasons</p>
-                        </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">4</h4>
+                        <p class="card-text">Seasons</p>
                       </div>
                     </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">1 678</h4>
+                        <p class="card-text">Schools</p>
+                      </div>
+                    </div>
+                  </div>
 
               </div>
             </div>
-            <!-- <br> -->
 
             <!-- CHARTS -->
             <div class="row charts">
+    
+            </div>
 
-              <div class="col-4">
-                <canvas id="bar-chart-grouped" width="180" height="180"></canvas> 
-              </div>
-              <div class="col-4">
-                <canvas id="line-chart" width="180" height="180"></canvas>
-              </div>
-            </div> 
             <div class="row charts">
-            <div class="col-4">
-              <canvas id="myChart" width="180" height="180"></canvas>
-            </div>
-            <div class="col-4">
-              <canvas id="bar-chart-horizontal" width="180" height="180"></canvas>
-            </div>
+              <div class="col-4" id="myDiv">
+                <canvas width="180" height="180"></canvas>
+              </div>
+              <div class="col-4" id="myScatter">
+                <canvas id="bar-chart-horizontal" width="180" height="180"></canvas>
+              </div>
             </div> 
 
 
@@ -252,7 +257,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <!-- Core JS -->
     <script src="js/scripts.js"></script>
-    <script>
+    <!-- Core JS -->
+    <script src="js/hyper.js"></script>
+    <!-- Core JS -->
+    <script src="js/chart-area-demo.js"></script>
+
+    <!-- Core JS -->
+    <script src="js/chart-bar-demo.js"></script>
+    <!-- Core JS -->
+    <script src="js/chart-pie-demo.js"></script>
+    <!-- Core JS -->
+    <script src="js/datatables-demo.js"></script>
+  <script>
         $(document).ready(function() {
     
         $('.card').delay(1800).queue(function(next) {
